@@ -1,0 +1,161 @@
+.navbar__top{
+    background: rgb(247, 235, 229);
+    padding: 12px 0;
+    &-cont{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    &-list{
+        display: flex;
+        list-style: none;
+        gap: 14px;
+        li{
+            color: rgba(0, 0, 0, 0.79);
+            font-size: 14px;
+            font-weight: 400;
+            line-height: -1px;
+            text-align: left;
+        }
+    }
+    &-menu{
+        display: flex;
+        align-items: center;
+        gap: 30px;
+        &-item{
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            select{
+                border: none;
+                background: none;
+                color: rgba(0, 0, 0, 0.88);
+                outline: none;
+            }
+            h5{
+                color: rgba(0, 0, 0, 0.88);
+                font-size: 14px;
+                font-weight: 400;
+                line-height: -1px;
+            }
+            .cart-icon{
+                position: relative;
+                &__length{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    border-radius: 50%;
+                    width: 13px;
+                    height: 13px;
+                    background-color: black;
+                    color: white;
+                    position: absolute;
+                    right: 0;
+                    bottom: 0;
+                    span{
+                        font-size: 10px;
+                    }
+                }
+            }
+        }
+        &-social{
+            display: flex;
+            align-items: center;
+            gap: 18px;
+        }
+    }
+    .navbar__resp{
+        display: none;
+    }
+}
+
+.navbar__bottom{
+    padding: 18px 0;
+    &-cont{
+        padding: 0 25px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 30px;
+    }
+    &-list{
+        display: flex;
+        list-style: none;
+        gap: 18px;
+        align-items: center;
+        width: 43%;
+        li{
+            display: flex;
+            gap: 5px;
+            align-items: center;
+            a{
+                text-decoration: none;
+            }
+            h4{
+                color: rgb(43, 20, 20);
+                font-size: 14px;
+                font-weight: 400;
+                line-height: -1px;
+                text-align: center;
+                text-transform: uppercase;
+            }
+            div{
+                width: 24px;
+                height: 24px;
+                border-radius: 50%;
+                background-color: #E7426A;
+            }
+            select{
+                border: none;
+                background: none;
+                color: rgb(43, 20, 20);
+                font-size: 14px;
+                font-weight: 400;
+                line-height: -1px;
+                text-align: left;
+                text-transform: uppercase;
+                outline: none;
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+@media (max-width: 590px) {
+    .navbar__top{
+        padding: 3px 0;
+        .navbar__resp {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            img{
+                width: 60px;
+            }
+            .cart-icon{
+                position: relative;
+                &__length {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    border-radius: 50%;
+                    width: 13px;
+                    height: 13px;
+                    background-color: black;
+                    color: white;
+                    position: absolute;
+                    right: 0;
+                    bottom: 0;
+                    span {
+                        font-size: 10px;
+                    }
+                }
+            }
+        }
+    }
+    .navbar__top-cont{
+        display: none;
+    }
+    .navbar__bottom{
+        display: none;
+    }
+}
